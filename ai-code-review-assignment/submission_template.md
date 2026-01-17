@@ -40,7 +40,7 @@ See `correct_task1.py`
  ### Testing Considerations
 If you were to test this function, what areas or scenarios would you focus on, and why?
 
- -I would focus on it not accepting invalid input because it reduces the amount of time it takes to computes and prevents the code form crashing abruptly
+ - I would focus on it not accepting invalid input because it reduces the amount of time it takes to computes and prevents the code form crashing abruptly
  - I would make sure the cancelled orders are recorded so as to reduce the amount of time it takes to sift through unecssary data as well as to preserve time and space in both computer aspect and logistically in reality
 - I would also focus on make sure large data is processed accuratley and flitered to fit the requirements of my program
 
@@ -50,7 +50,7 @@ If you were to test this function, what areas or scenarios would you focus on, a
 > This function calculates average order value by summing the amounts of all non-cancelled orders and dividing by the number of orders. It correctly excludes cancelled orders from the calculation.
 
 ### Issues in original explanation
--Claims correct exclusion of cancelled orders while still dividing by total count → misleading
+- Claims correct exclusion of cancelled orders while still dividing by total count → misleading
 - Doesn't mention division by zero danger
 - Ignores all robustness and crash problems
 
@@ -100,10 +100,10 @@ If you were to test this function, what areas or scenarios would you focus on, a
 
  - I would make sure the program also matches and verifies with the password which is important for security.
 
- -I would test it with very long email addresses to check how much it can compute
+ - I would test it with very long email addresses to check how much it can compute
 
- -I would make sure it handles non numerical inputs as well as whitespace
- -I would test it with real world addresses to verify it's functionality
+ - I would make sure it handles non numerical inputs as well as whitespace
+ - I would test it with real world addresses to verify it's functionality
 
 
 ## 3) Explanation Review & Rewrite
@@ -163,10 +163,10 @@ See `correct_task3.py`
 ### Testing Considerations
 If you were to test this function, what areas or scenarios would you focus on, and why?
  
- -Make sure if the list has only None values, it doesn't crash but returns 0.0
- -Make sure if the list has empty values it doesn't crash but return 0.0
- - when there are mixed values that it makes sure it ignores the None and non numerical values
- -if there are strings that look like numbers, to make sure it is included in the average and make sure it doesn't crash over strings that don't look like numbers and ignore them while calcuating
+ - Make sure if the list has only None values, it doesn't crash but returns 0.0
+ - Make sure if the list has empty values it doesn't crash but return 0.0
+ - When there are mixed values that it makes sure it ignores the None and non numerical values
+ - If there are strings that look like numbers, to make sure it is included in the average and make sure it doesn't crash over strings that don't look like numbers and ignore them while calcuating
 
 
 ## 3) Explanation Review & Rewrite
