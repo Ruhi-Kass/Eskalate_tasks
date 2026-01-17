@@ -58,7 +58,7 @@ If you were to test this function, what areas or scenarios would you focus on, a
 - Calculates the average amount of non-cancelled orders. Only valid non-cancelled orders with numeric amounts are included in the calculation. Returns 0.0 when there are no valid orders to average (empty input, all cancelled, or all invalid). Vaild data is invalubale to assesement and evaluation of data in AI.
 
 ## 4) Final Judgment
-- Decision:**Reject**
+- Decision: **Reject**
 - Justification:Fundamental business logic error (wrong denominator) + multiple crash scenarios + zero robustness
 - Confidence & unknowns:High confidence — the bug is obvious and severe
 
@@ -119,7 +119,7 @@ If you were to test this function, what areas or scenarios would you focus on, a
 - > Counts strings that contain at least a non-empty local part, `@`, and a domain with at least one dot. Very permissive basic structural check — not suitable for production email validation.
 
 ## 4) Final Judgment
-- Decision:**Reject**
+- Decision: **Reject**
 - Justification:Claimed purpose ("valid email addresses") is completely misleading given the extremely weak check
 - Confidence & unknowns: High Confidence
 
@@ -182,6 +182,6 @@ If you were to test this function, what areas or scenarios would you focus on, a
 - Calculates average of successfully converted numeric values, ignoring None and any values that cannot be converted to float. Returns 0.0 when there are no valid numeric values.
 
 ## 4) Final Judgment
-- Decision:**Reject**
+- Decision: **Reject**
 - Justification:Serious correctness error (wrong denominator) + crashes on almost any real-world messy data
 - Confidence & unknowns:Very high confidence
